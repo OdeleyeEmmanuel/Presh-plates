@@ -1,23 +1,26 @@
-# Presh's Plates Kitchen — Website Package
+PRESH'S PLATES KITCHEN WEBSITE
 
-A static website for Presh's Plates Kitchen.
+Files are intentionally kept flat for easy upload/deployment.
 
-## Included
-- `index.html` — complete website
-- `styles.css` — styling and responsive layout
-- `script.js` — 60-second intro, skip button, animations, mobile menu and WhatsApp order form
-- `assets/` — logo and supplied food/brand photographs
+Main files:
+- index.html
+- styles.css
+- script.js
 
-## Contact
-- WhatsApp/Phone: +234 815 422 7732
-- Email: preshsplate.kitchen@gmail.com
-- Instagram: @_preshsplate.kitchen
+Image files:
+- preshs-plates-logo-transparent.png
+- food-spaghetti-01.jpg
+- food-spaghetti-02.jpg
+- food-spaghetti-03.jpg
+- food-packaging-01.jpg
+- brand-reference.jpg
+- opening-reference.png
 
-## Important
-The website treats Ewa Agoyin and Chicken & Chips as **Coming Soon**, not currently available.
-Prices are intentionally shown as "Contact us" because no prices were supplied.
+Opening experience:
+- Three horizontal food-image lanes move continuously in opposite directions.
+- The transparent Presh's Plates logo sits above the moving imagery.
+- The intro completes after 60 seconds or can be skipped.
+- The logo's white background has been removed so it blends into the opening.
 
-## Running
-Open `index.html` in a browser or upload the entire folder to a static host such as GitHub Pages, Netlify, Vercel or Firebase Hosting.
-
-The Chewy/DM Sans fonts are requested from Google Fonts when internet access is available; the CSS also includes fallback fonts so the layout still works offline.
+Ordering:
+The contact/order form opens WhatsApp for Presh's Plates Kitchen at +234 815 422 7732.
