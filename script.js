@@ -1,3 +1,6 @@
+const introImages = ['food-spaghetti-01.jpg','food-spaghetti-02.jpg','food-spaghetti-03.jpg','food-packaging-01.jpg','preshs-plates-logo.png'];
+introImages.forEach(src => { const img = new Image(); img.src = src; });
+
 const intro = document.getElementById('intro');
 const site = document.getElementById('site');
 const skip = document.getElementById('skipIntro');
@@ -10,19 +13,10 @@ function openSite(){
   site.classList.add('ready');
   document.body.classList.add('intro-finished');
   setTimeout(()=>{ intro.remove(); }, 1100);
-  try { sessionStorage.setItem('preshIntroSeen','1'); } catch(e){}
 }
 
-try {
-  if(sessionStorage.getItem('preshIntroSeen') === '1'){
-    intro.remove();
-    site.classList.add('ready');
-  } else {
-    setTimeout(openSite, 60000);
-  }
-} catch(e) {
-  setTimeout(openSite, 60000);
-}
+setTimeout(openSite, 60000);
+
 skip.addEventListener('click', openSite);
 
 menuToggle.addEventListener('click', ()=>nav.classList.toggle('mobile-open'));
